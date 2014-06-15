@@ -1,0 +1,45 @@
+---
+layout: post
+title: Using Factory Beans in Spring Java Configs
+categories:
+- Software Development
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '2'
+  _syntaxhighlighter_encoded: '1'
+  _aioseop_keywords: Spring Factory Bean, Spring factory bean Java Configs, spring
+    java config
+  _aioseop_title: Using Factory Beans in Spring Java Configs
+author:
+  login: craig
+  email: craigpardey@gmail.com
+  display_name: craig
+  first_name: Craig
+  last_name: Pardey
+---
+<p>I recently went through an exercise of converting Spring XML configuration files to Java-based configuration.  The process went well for the most part, but I encountered an oddity around how to use factory beans when using Java configs.</p>
+<p>In XML, factory beans would be used like this<br />
+[xml]<br />
+&lt;bean id=&quot;MyDataSource&quot;<br />
+  class=&quot;org.springframework.jndi.JndiObjectFactoryBean&quot;<br />
+  p:jndiName=&quot;jdbc/MyDataSource&quot;<br />
+  p:resourceRef=&quot;false&quot;<br />
+/&gt;<br />
+[/xml]</p>
+<p>In Java however, this has to be separated into two separate @Beans<br />
+[java]<br />
+@Bean<br />
+public JndiObjectFactoryBean getJndiObjectFactoryBean() {<br />
+  JndiObjectFactoryBean jndi = new JndiObjectFactoryBean();<br />
+  jndi.setJndiName(&quot;jdbc/MyDataSource&quot;);<br />
+  jndi.setResourceRef(false);<br />
+  return jndi;<br />
+}</p>
+<p>@Bean<br />
+public DataSource getSampleDataSource() {<br />
+  return (DataSource) getJndiObjectFactoryBean().getObject();<br />
+}<br />
+[/java]</p>

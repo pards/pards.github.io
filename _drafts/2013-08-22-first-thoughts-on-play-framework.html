@@ -1,0 +1,30 @@
+---
+layout: post
+title: First thoughts on Play Framework
+categories:
+- Software Development
+tags: []
+status: draft
+type: post
+published: false
+meta:
+  _edit_last: '2'
+author:
+  login: craig
+  email: craigpardey@gmail.com
+  display_name: craig
+  first_name: Craig
+  last_name: Pardey
+---
+<p>I've been working with the <a href="http://playframework.com">Play Framework</a> (v2.1.2) for a few weeks now.  To take the framework through its paces I've been building a simple, but real-world web application <em>in Java, not Scala</em>.</p>
+<p><strong>Strengths</strong><br />
+Out of the box, the framework is very nice, and it reminds me of the simplicity of working with Ruby on Rails.  </p>
+<p>It is quick and easy to add pages, model classes, etc.  In fact, for the first week each new feature or page that I added took less than an hour including integrating with Google for sign-in.</p>
+<p>The concept of routes that I first learned about in Rails has been extended to include Javascript routes.  This means that when I update my routes I only have to make the change in the routes file and the JavaScript code just works.  See this excellent<br />
+<a href="http://stackoverflow.com/questions/11133059/play-2-x-how-to-make-an-ajax-request-with-a-common-button">StackOverflow post</a> to get an idea of how easy it is to set this up.</p>
+<p><strong>Weaknesses</strong><br />
+The only template language is Scala.  While I don't mind learnin' myself some Scala this may put some people off.  There are are several other nooks and crannies in the framework where the Scala shows through into the Java code forcing me to write hard-to-read Java code.  This was particularly true with plugins, but probably because they were written Scala-first.</p>
+<p>The automated database evolutions are nice but they don't produce production-quality SQL.  For instance, if you change a table it'll just produce a script to drop and recreate it.  Not ideal, but it works.  I'd suggest that you write your own evolutions by hand to ensure that you're getting what you want.</p>
+<p>Further to that, I also found that when evolutions were generated for a model object that had a composite primary key, the SQL did not create the corresponding primary key in the database.  Again, this could be avoided by crafting your own evolutions.</p>
+<p>Compile time is a bit slower than I'd like.</p>
+<p>Not everything is dynamically reloaded at runtime.  For example, if you change your database connection.</p>

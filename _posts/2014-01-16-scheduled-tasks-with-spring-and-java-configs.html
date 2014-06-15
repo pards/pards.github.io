@@ -1,0 +1,61 @@
+---
+layout: post
+title: Scheduled tasks with Spring and Java configs
+categories:
+- Software Development
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _syntaxhighlighter_encoded: '1'
+  _edit_last: '2'
+  _aioseop_description: Spring 3.2 has some very nice features for scheduling tasks.
+  _aioseop_title: Scheduled tasks with Spring and Java configs
+author:
+  login: craig
+  email: craigpardey@gmail.com
+  display_name: craig
+  first_name: Craig
+  last_name: Pardey
+---
+<p>Spring 3.2 has some very nice features for scheduling tasks.</p>
+<p>The pure Java way of doing this looks something like<br />
+[java]<br />
+private ScheduledExecutorService executor = Executors.newSingleThreadScheduledExecutor();<br />
+class ScheduledTask implements Runnable {<br />
+	@Override<br />
+	public void run() {<br />
+		System.out.println(&quot;Running scheduled task&quot;);<br />
+	}<br />
+}</p>
+<p>// Schedule a task every 5 seconds<br />
+executor.scheduleAtFixedRate(new ScheduledTask(), 1, 5, TimeUnit.SECONDS);<br />
+// If you don't do this then the JVM won't exit cleanly<br />
+executor.shutdown();<br />
+[/java]</p>
+<p>But now, with the snazzy new Spring scheduling annotations, it can be as simple as this<br />
+[java]<br />
+@Configuration<br />
+@EnableScheduling<br />
+public class MyAppConfig {<br />
+	@Bean<br />
+	public IHeartbeatService getHeartbeatService() {<br />
+		return new HeartbeatServiceImpl();<br />
+	}<br />
+}</p>
+<p>public class HeartbeatServiceImpl implements IHeartbeatService {<br />
+	private static final String HEARTBEAT_DELAY_MS = &quot;${heartbeat.initdelay.ms}&quot;;<br />
+	private static final String HEARTBEAT_INIT_DELAY_MS = &quot;${heartbeat.ms}&quot;;</p>
+<p>	@Override<br />
+	@Scheduled(initialDelayString = HEARTBEAT_DELAY_MS, fixedDelayString = HEARTBEAT_INIT_DELAY_MS)<br />
+	public void sendHeartbeat() {<br />
+		LOGGER.info(&quot;Heartbeating goes here.&quot;);<br />
+	}<br />
+[/java]</p>
+<p>The beauty of this approach is that</p>
+<ul>
+<li>It's declarative.</li>
+<li>Spring's property loading works.</li>
+<li>I don't have to care about which Java executor Spring chooses under the hood.</li>
+</ul>

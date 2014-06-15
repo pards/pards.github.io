@@ -1,0 +1,33 @@
+---
+layout: post
+title: Broken Generics
+categories: []
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '2'
+  _syntaxhighlighter_encoded: '1'
+author:
+  login: craig
+  email: craigpardey@gmail.com
+  display_name: craig
+  first_name: Craig
+  last_name: Pardey
+---
+<p>Given the following code<br />
+[java]<br />
+Map&lt;String, String&gt; map = new HashMap&lt;String, String&gt;();<br />
+map.put(&quot;123&quot;, &quot;value&quot;);</p>
+<p>Integer key = Integer.valueOf(123);<br />
+String actual = map.get(key);<br />
+[/java]</p>
+<p>What is the value of "actual"?</p>
+<ol>
+<li>Compilation error - key should be a String</li>
+<li>"value"</li>
+<li>null</li>
+</ol>
+<p>Answer: null</p>
+<p>This blew me away.  The whole point of type-safe collections was supposed to provide compile-time checking.  However, the only generics method on the Map<K,V> class is put(K, V).  So calling get(Object) doesn't cause a compilation error, but merely returns null.</p>

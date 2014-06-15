@@ -1,0 +1,59 @@
+---
+layout: post
+title: Atomic construction
+categories:
+- Software Development
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '2'
+  _syntaxhighlighter_encoded: '1'
+  _aioseop_keywords: Atomic construction, java multi-threading, double-checked locking,
+    synchronization
+  _aioseop_title: Atomic construction
+author:
+  login: craig
+  email: craigpardey@gmail.com
+  display_name: craig
+  first_name: Craig
+  last_name: Pardey
+---
+<p>Bugs caused by multi-threading can be very difficult to find.  Here's one I encountered recently.</p>
+<p>[java]<br />
+private static MyObject INSTANCE;</p>
+<p>public void init() {<br />
+  if( INSTANCE == null) {<br />
+    initInstance();<br />
+  }<br />
+}</p>
+<p>private static synchronized void initInstance() {<br />
+  if( INSTANCE != null) {<br />
+    return;<br />
+  }<br />
+  INSTANCE = new MyObject();<br />
+  INSTANCE.initThis();<br />
+  INSTANCE.initThat();<br />
+}<br />
+[/java]</p>
+<p>At first glance, this code is fine.  It uses a synchronized static method to create the singleton, using double-checked locking to make sure it only gets created once.  But on closer inspection it is possible for the null check in init() to pass before the INSTANCE has been fully initialized.</p>
+<p>My instinct was to fix this using a lock but then a colleague pointed out that it could be resolved locklessly by using a temporary variable instead. The singleton only becomes non-null once the multi-step initialization has completed.</p>
+<p>The working, thread-safe version looks like this:<br />
+[java]<br />
+private static INSTANCE;</p>
+<p>public void init() {<br />
+  if( INSTANCE == null) {<br />
+    initInstance();<br />
+  }<br />
+}</p>
+<p>private static synchronized void initInstance() {<br />
+  if( INSTANCE != null) {<br />
+    return;<br />
+  }<br />
+  MyObject tmp = new MyObject();<br />
+  tmp.initThis();<br />
+  tmp.initThat();<br />
+  INSTANCE = tmp;<br />
+}<br />
+[/java]</p>

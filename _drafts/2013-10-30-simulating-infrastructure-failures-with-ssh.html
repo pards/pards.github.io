@@ -1,0 +1,27 @@
+---
+layout: post
+title: Simulating infrastructure failures with SSH
+categories:
+- Software Development
+tags: []
+status: draft
+type: post
+published: false
+meta:
+  _edit_last: '2'
+  _syntaxhighlighter_encoded: '1'
+author:
+  login: craig
+  email: craigpardey@gmail.com
+  display_name: craig
+  first_name: Craig
+  last_name: Pardey
+---
+<p>How do you know that your failure cases work correctly? You test them, of course! However, it can be inconvenient/unlikely/inconsiderate to take shared resources offline just so you can test how your application behaves.</p>
+<p>Instead, you can use SSH tunneling to simulate the infrastructure failure.</p>
+<p>Reconfigure your app to connect to a different host/port<br />
+Open an SSH tunnel on that host/port and forward it to the real host/port<br />
+Bring the SSH tunnel up and down to simulate the failure.</p>
+<p>[code][/code]<br />
+ssh -f -g username@host -L dummy_port:real.host.com:real_port -N<br />
+[code][/code]</p>
