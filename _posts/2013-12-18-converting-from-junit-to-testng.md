@@ -27,13 +27,12 @@ JUnit to TestNG in a few simple clicks, and it works pretty well for the most
 part. However, I soon noticed that it was replacing Assert.assertX with
 AssertJUnit.assertX. Upon further inspection, this was because TestNG's Assert
 uses different argument ordering. For example  
-[java]  
-// JUnit  
-Assert.assertEquals(message, expected, actual);
 
-// TestNG  
-Assert.assertEquals(actual, expected, message);  
-[/java]
+    // JUnit  
+    Assert.assertEquals(message, expected, actual);
+
+    // TestNG  
+    Assert.assertEquals(actual, expected, message);  
 
 Each argument has moved.
 

@@ -28,12 +28,11 @@ However, sometimes you may want to 'take local' or 'take other' when there's
 _no_ merge conflict.
 
 To take local:  
-[code]  
-hg merge --tool internal:local <rev>  
-[/code]
+
+	hg merge --tool internal:local <rev>  
 
 To take other:  
-[code]  
-hg merge --tool internal:other <rev>  
-[/code]
+	
+	hg merge --tool internal:other <rev>  
+
 

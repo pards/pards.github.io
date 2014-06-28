@@ -24,24 +24,22 @@ author:
 Bugs caused by multi-threading can be very difficult to find. Here's one I
 encountered recently.
 
-[java]  
-private static MyObject INSTANCE;
+	private static MyObject INSTANCE;
 
-public void init() {  
-if( INSTANCE == null) {  
-initInstance();  
-}  
-}
+	public void init() {  
+		if( INSTANCE == null) {  
+			initInstance();  
+		}  
+	}
 
-private static synchronized void initInstance() {  
-if( INSTANCE != null) {  
-return;  
-}  
-INSTANCE = new MyObject();  
-INSTANCE.initThis();  
-INSTANCE.initThat();  
-}  
-[/java]
+	private static synchronized void initInstance() {  
+		if( INSTANCE != null) {  
+			return;  
+		}  
+		INSTANCE = new MyObject();  
+		INSTANCE.initThis();  
+		INSTANCE.initThat();  
+	}  
 
 At first glance, this code is fine. It uses a synchronized static method to
 create the singleton, using double-checked locking to make sure it only gets
@@ -54,23 +52,22 @@ singleton only becomes non-null once the multi-step initialization has
 completed.
 
 The working, thread-safe version looks like this:  
-[java]  
-private static INSTANCE;
 
-public void init() {  
-if( INSTANCE == null) {  
-initInstance();  
-}  
-}
+	private static INSTANCE;
 
-private static synchronized void initInstance() {  
-if( INSTANCE != null) {  
-return;  
-}  
-MyObject tmp = new MyObject();  
-tmp.initThis();  
-tmp.initThat();  
-INSTANCE = tmp;  
-}  
-[/java]
+	public void init() {  
+		if( INSTANCE == null) {  
+			initInstance();  
+		}  
+	}
+
+	private static synchronized void initInstance() {  
+		if( INSTANCE != null) {  
+			return;  
+		}  
+		MyObject tmp = new MyObject();  
+		tmp.initThis();  
+		tmp.initThat();  
+		INSTANCE = tmp;  
+	}  
 

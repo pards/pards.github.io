@@ -38,15 +38,9 @@ in Java. The method should take a numerator and a denominator and return the
 largest integer multiplier. For example 10/3 = 3, which would be called as int
 result = divide(10, 3)
 
-    
-    
-    
     public interface DivisionOperator {
       int divide(int numerator, int denominator);
     }
-    
-    
-    
     
     /** ************************************* */
     public class Division implements DivisionOperator {
@@ -61,9 +55,6 @@ result = divide(10, 3)
         return i - 1;
       }
     }
-    
-    
-    
     
     /** ************************************* */
     public class DivisionTest {
@@ -86,10 +77,8 @@ result = divide(10, 3)
         Assert.assertEquals( 1, div.divide(3, 3));
       }
     }
-    
 
 I came up with a few implementations (hence the interface, makes testing much
 easier) but I think this one is the cleanest. I'm pretty sure there's a
 solution using bit shifting but let's face it, most developers don't use bit
 shifting in their code.
-

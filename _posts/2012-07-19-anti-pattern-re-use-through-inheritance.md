@@ -46,21 +46,19 @@ of its context; you can test the most important parts of the system in
 isolation. Better yet, the aforementioned subclasses can be tested using Mock
 Objects in place of the collaborator.
 
-[java]  
-public abstract class AbstractHandler {  
-protected final void process(Event e){  
-// Do common stuff  
-}  
-}
+	public abstract class AbstractHandler {  
+		protected final void process(Event e){  
+			// Do common stuff  
+		}  
+	}
 
-public class MyHandler extends AbstractHandler {  
-public void handleEvent(Event e) {  
-// Do a bunch of stuff  
-process(e);  
-// Do more stuff  
-}  
-}  
-[/java]
+	public class MyHandler extends AbstractHandler {  
+		public void handleEvent(Event e) {  
+			// Do a bunch of stuff  
+			process(e);  
+			// Do more stuff  
+		}  
+	}  
 
 In the contrived example above, it is impossible to test MyHandler without
 also exercising AbstractHandler. In a real-world case, AbstractHandler may
@@ -69,59 +67,56 @@ instantiate in a test case.
 
 So, let's refactor it a little.
 
-[java]  
-public interface IEventProcessor {  
-void process(Event e);  
-}
+	public interface IEventProcessor {  
+		void process(Event e);  
+	}
 
-public class EventProcessor implements IEventProcessor {  
-@Override  
-public void process(Event e){  
-// Do common stuff  
-}  
-}
+	public class EventProcessor implements IEventProcessor {  
+		@Override  
+		public void process(Event e){  
+			// Do common stuff  
+		}  
+	}
 
-public class MyHandler {  
-private IEventProcessor eventProcessor;
+	public class MyHandler {  
+		private IEventProcessor eventProcessor;
 
-public void handleEvent(Event e) {  
-// Do a bunch of stuff  
-eventProcessor.process(e);  
-// Do more stuff  
-}
+		public void handleEvent(Event e) {  
+			// Do a bunch of stuff  
+			eventProcessor.process(e);  
+			// Do more stuff  
+		}
 
-void setEventProcessor(IEventProcessor eventProcessor) {  
-this.eventProcessor = eventProcessor;  
-}  
-}  
-[/java]
+		void setEventProcessor(IEventProcessor eventProcessor) {  
+			this.eventProcessor = eventProcessor;  
+		}  
+	}  
 
 After refactoring to favour Object Composition we can easily write unit tests
 for both classes. For example, to test MyHandler we use a mock IEventProcessor
 (using Mockito, or JMock) so the test is not dependent on the concrete
 EventProcessor class.
 
-[java]  
-public class MyHandlerTest {  
-MyHandler handler;  
-IEventProcessor processor;
+	public class MyHandlerTest {  
+		MyHandler handler;  
+		IEventProcessor processor;
 
-@Before  
-public void setUp() {  
-processor = mock(IEventProcessor.class);  
-handler = new MyHandler();  
-handler.setEventProcessor(processor);  
-}
+		@Before  
+		public void setUp() {  
+			processor = mock(IEventProcessor.class);  
+			handler = new MyHandler();  
+			handler.setEventProcessor(processor);  
+		}
 
-@Test  
-public void testHandleEvent() {  
-handler.handleEvent(new Event());  
-}  
-}  
-[/java]
+		@Test  
+		public void testHandleEvent() {  
+			handler.handleEvent(new Event());  
+		}  
+	}  
 
 Teasing apart an older, inheritance-based system into reusable parts is an
 immensely valuable activity even if you're not planning to use dependency-
 injection. Your system will be comprised of cleaner, independent classes, and
 be more testable to boot.
 
+	

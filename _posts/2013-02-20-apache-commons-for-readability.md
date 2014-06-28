@@ -25,34 +25,30 @@ apparent when you examine the effect that these methods have on the
 readability of the caller.
 
 I see a lot of code that does stuff like this:  
-[java]  
-if( s == null || "".equals(s.trim()))  
-{  
-// Do something  
-}  
-[/java]  
+
+	if( s == null || "".equals(s.trim())) {  
+		// Do something  
+	}  
+
 which could be re-written as  
-[java]  
-if( StringUtils.isBlank(s))  
-{  
-// Do something  
-}  
-[/java]  
+
+	if( StringUtils.isBlank(s)) {  
+		// Do something  
+	}  
+
 Personally, I find it much easier to understand the intent of the second
 version.
 
 Same goes for [the admittedly poorly named] 'defaultString'  
-[java]  
-String result = s1;  
-if( s1 == null)  
-{  
-result = s2;  
-}  
-[/java]  
+
+	String result = s1;  
+	if( s1 == null) {  
+		result = s2;  
+	}  
+
 which could be re-written as  
-[java]  
-String result = StringUtils.defaultString(s1, s2);  
-[/java]
+
+	String result = StringUtils.defaultString(s1, s2);  
 
 There's no need to re-invent the wheel. Many smart people have worked hard to
 write these methods in an efficient, bug-free way so you might as well
@@ -60,4 +56,3 @@ leverage all their hard work.
 
 By using the tried-and-true Apache Commons classes where possible your code
 will be more readable and its intended behaviour will be clearer.
-

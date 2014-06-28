@@ -24,18 +24,16 @@ hgweb.wsgi). However, cloning our 1Gb repository took an hour or more and
 often failed.
 
 The only information in the Apache log was  
-[java]  
-mod_wsgi (pid=1234: Exception occurred processing WSGI script
-'C:/hg/hgweb/hgweb.wsgi'  
-IOError: failed to write data  
-[/java]
+
+	mod_wsgi (pid=1234: Exception occurred processing WSGI script
+	'C:/hg/hgweb/hgweb.wsgi'  
+	IOError: failed to write data  
 
 The solution was to disable compression by adding the following lines to
 hgweb.config  
-[java]  
-[server]  
-preferuncompressed = true  
-[/java]
+
+	[server]  
+	preferuncompressed = true  
 
 By default, Mercurial will compress everything before sending it down the
 pipe. This makes sense if you have a powerful server and a slow network, but

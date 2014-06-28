@@ -27,27 +27,25 @@ but I encountered an oddity around how to use factory beans when using Java
 configs.
 
 In XML, factory beans would be used like this  
-[xml]  
-<bean id="MyDataSource"  
-class="org.springframework.jndi.JndiObjectFactoryBean"  
-p:jndiName="jdbc/MyDataSource"  
-p:resourceRef="false"  
-/>  
-[/xml]
+
+	<bean id="MyDataSource"  
+	class="org.springframework.jndi.JndiObjectFactoryBean"  
+	p:jndiName="jdbc/MyDataSource"  
+	p:resourceRef="false"  
+	/>  
 
 In Java however, this has to be separated into two separate @Beans  
-[java]  
-@Bean  
-public JndiObjectFactoryBean getJndiObjectFactoryBean() {  
-JndiObjectFactoryBean jndi = new JndiObjectFactoryBean();  
-jndi.setJndiName("jdbc/MyDataSource");  
-jndi.setResourceRef(false);  
-return jndi;  
-}
 
-@Bean  
-public DataSource getSampleDataSource() {  
-return (DataSource) getJndiObjectFactoryBean().getObject();  
-}  
-[/java]
+	@Bean  
+	public JndiObjectFactoryBean getJndiObjectFactoryBean() {  
+		JndiObjectFactoryBean jndi = new JndiObjectFactoryBean();  
+		jndi.setJndiName("jdbc/MyDataSource");  
+		jndi.setResourceRef(false);  
+		return jndi;  
+	}
+
+	@Bean  
+	public DataSource getSampleDataSource() {  
+		return (DataSource) getJndiObjectFactoryBean().getObject();  
+	}  
 

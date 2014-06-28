@@ -53,14 +53,10 @@ incrementing the version. There are several ways of solving this problem:
 In this solution the version number would be incremented in a synchronized
 block, using the Object instance as the lock on which to synchronize.
 
-    
-    
-    
     synchronized(myObject) {
       myObject.setVersion( myObject.getVersion() + 1);
     }
     
-
 This method works in a multi-threaded environment but does not work when the
 application is clustered across multiple servers.
 
@@ -71,16 +67,12 @@ However, there is a pitfall that needs to be avoided for this to work as
 expected.
 
 The incorrect way to do this is to increment the value in Java and save it.
-
-    
-    
     
       String sql = "update my_obj set version = ? where id = ?";
       ...
       stmt.setInt( idx++, o.getVersion()+1);
       stmt.setInt( idx++, o.getId());
       stmt.execute();
-    
 
 The problem here is that different threads could write the same version number
 when they should have incremented it. Consider this scenario:
@@ -99,13 +91,8 @@ forces all threads across all clustered servers to get a write lock on a
 single record in the database, and the value that they are incrementing is
 always the latest. Each thread will block until the previous one has committed
 its change.
-
-    
-    
     
       String sql = "update my_obj set version = version + 1 where id = ?";
       ...
       stmt.setInt( idx++, o.getId());
       stmt.execute();
-    
-

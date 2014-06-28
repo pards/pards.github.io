@@ -38,26 +38,24 @@ results and send them back with the POST. Enter the Regular Expression
 Extractor. I added a suite-wide extractor for the 'seedids' parameter that
 looks like this
 
-`Reference Name: seedids  
-Regular Expression: (name="seedids")(.+?)(value=")(.+?)(")  
-Template: $4$  
-Match No: 1  
-Default Value: REGEX_FAILED_SEED_IDS  
-`
+	Reference Name: seedids  
+	Regular Expression: (name="seedids")(.+?)(value=")(.+?)(")  
+	Template: $4$  
+	Match No: 1  
+	Default Value: REGEX_FAILED_SEED_IDS  
 
 For the @Persist("client") parameters I added a page-specific reg-ex
 extractor. I needed one per page because the parameter name changes each time.
 The extractor for the "state:path/to/page" parameter looks like this
 
-`Reference Name: state  
-Regular Expression: (name="state:path/to/page")(.+?)(value=")(.+?)(")  
-Template: $4$  
-Match No: 1  
-Default Value: REGEX_FAILED_STATE  
-`  
+	Reference Name: state  
+	Regular Expression: (name="state:path/to/page")(.+?)(value=")(.+?)(")  
+	Template: $4$  
+	Match No: 1  
+	Default Value: REGEX_FAILED_STATE  
+
 One gotcha: I had to use "Body (unescaped)" in the regex extractor to get the
 real value for these.
 
 Now I just replaced the recorded seedids and state values with ${seedids} and
 ${state} (with encoding enabled) and my POST requests worked like a charm.
-

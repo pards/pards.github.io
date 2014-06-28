@@ -23,20 +23,19 @@ trying to get the JMSXUserID field to flow through to the application on the
 other side of MQ.
 
 First, I created a MessagePostProcessor to add the JMS header  
-[java]  
-public class MyMessagePostProcessor implements MessagePostProcessor  
-{  
-private String userId;
 
-@Override  
-public Message postProcessMessage(Message msg) throws JMSException  
-{  
-msg.setStringProperty(JmsConstants.JMS_IBM_MQMD_USERIDENTIFIER, userId);  
-msg.setStringProperty("JMSXUserID", userId);  
-return msg;  
-}  
-}  
-[/java]
+	public class MyMessagePostProcessor implements MessagePostProcessor  
+	{  
+		private String userId;
+
+		@Override  
+		public Message postProcessMessage(Message msg) throws JMSException  
+		{  
+			msg.setStringProperty(JmsConstants.JMS_IBM_MQMD_USERIDENTIFIER, userId);  
+			msg.setStringProperty("JMSXUserID", userId);  
+			return msg;  
+		}  
+	}  
 
 But when I checked the queue with HermesJMS I could see that the JMSXUserID
 had been overwritten somewhere, so I fired up WireShark and watched for the
@@ -62,22 +61,19 @@ DynamicDestinationResolver to send the message. So I extended Spring's
 DynamicDestinationResolver, set the two fields I needed to and Voila! The
 JMSXUserID passed through.
 
-[java]  
-public class MqDestinationResolver extends DynamicDestinationResolver  
-{  
-@Override  
-public Destination resolveDestinationName(Session session, String
-destinationName, boolean pubSubDomain) throws JMSException  
-{  
-MQDestination mqDest = (MQDestination)super.resolveDestinationName(session,
-destinationName, pubSubDomain);  
-mqDest.setBooleanProperty(WMQConstants.WMQ_MQMD_WRITE_ENABLED, true);  
-mqDest.setIntProperty(WMQConstants.WMQ_MQMD_MESSAGE_CONTEXT,
-WMQConstants.WMQ_MDCTX_SET_IDENTITY_CONTEXT);  
-return dest;  
-}  
-}  
-[/java]
+	public class MqDestinationResolver extends DynamicDestinationResolver  
+	{  
+		@Override  
+		public Destination resolveDestinationName(Session session, String destinationName, boolean pubSubDomain) throws JMSException  
+		{  
+			MQDestination mqDest = (MQDestination)super.resolveDestinationName(session,
+			destinationName, pubSubDomain);  
+			mqDest.setBooleanProperty(WMQConstants.WMQ_MQMD_WRITE_ENABLED, true);  
+			mqDest.setIntProperty(WMQConstants.WMQ_MQMD_MESSAGE_CONTEXT,
+			WMQConstants.WMQ_MDCTX_SET_IDENTITY_CONTEXT);  
+			return dest;  
+		}  
+	}  
 
 I hope this helps.
 

@@ -30,9 +30,8 @@ I encountered an issue recently where I knew that hg was using an erroneous
 setting but I had no idea where the setting was coming from.
 
 The magic answer is  
-[code]  
-hg --debug showconfig  
-[/code]
+
+	hg --debug showconfig  
 
 This will output all the current settings, along with the name of the file
 that it got each setting from. Very useful indeed.

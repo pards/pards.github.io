@@ -18,13 +18,12 @@ author:
 ---
 
 Given the following code  
-[java]  
-Map<String, String> map = new HashMap<String, String>();  
-map.put("123", "value");
 
-Integer key = Integer.valueOf(123);  
-String actual = map.get(key);  
-[/java]
+	Map<String, String> map = new HashMap<String, String>();  
+	map.put("123", "value");
+
+	Integer key = Integer.valueOf(123);  
+	String actual = map.get(key);  
 
 What is the value of "actual"?
 

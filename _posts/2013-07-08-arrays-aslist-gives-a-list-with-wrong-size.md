@@ -21,17 +21,15 @@ author:
 
 Try this out for fun.
 
-[java]  
-int[] i = new int[]{1, 2, 3};  
-System.out.println(Arrays.asList(i).size());
+	int[] i = new int[]{1, 2, 3};  
+	System.out.println(Arrays.asList(i).size());
 
-Integer[] ii = new Integer[]{1, 2, 3};  
-System.out.println(Arrays.asList(ii).size());  
-[/java]
+	Integer[] ii = new Integer[]{1, 2, 3};  
+	System.out.println(Arrays.asList(ii).size());  
 
 Output:  
-`1  
-3`
+	1  
+	3
 
 What the hell, Java? This is totally unexpected behaviour!
 

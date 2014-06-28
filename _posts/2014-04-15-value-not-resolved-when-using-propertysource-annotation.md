@@ -23,31 +23,28 @@ Spring's gotcha-of-the-day is around using @Value to resolve property
 placeholders in combination with @PropertySource.
 
 I had the following Spring Java configuration:  
-[java]  
-@Configuration  
-@PropertySource("classpath:/test.properties")  
-public class TestAppConfig {
 
-@Value("${queue.name}")  
-private String queue;
+    @Configuration  
+    @PropertySource("classpath:/test.properties")  
+    public class TestAppConfig {
 
-@Bean(name="queue")  
-public String getQueue() {  
-return queue;  
-}  
-}  
-[/java]
+        @Value("${queue.name}")  
+        private String queue;
+        
+        @Bean(name="queue")  
+        public String getQueue() {  
+            return queue;  
+        }  
+    }  
 
 But the value in "queue" was not resolving - it returned "${queue.name}" as
 the value.
 
 It turns out that I needed the following magical incantation to get it to
 work.  
-[java]  
-@Bean  
-public static PropertySourcesPlaceholderConfigurer
-propertySourcesPlaceholderConfigurer() {  
-return new PropertySourcesPlaceholderConfigurer();  
-}  
-[/java]
+
+    @Bean  
+    public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {  
+        return new PropertySourcesPlaceholderConfigurer();  
+    }  
 

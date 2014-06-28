@@ -47,102 +47,78 @@ By that, I mean using a callback method plus wait()/notify().
 
 Consider the following example:
 
-[java]  
-@Test  
-public void testSomeAsynchCode() throws Exception  
-{  
-AsynchObj asynchObj = new AsynchObj();  
-final Object lock = new Object();  
-asynchObj.addListener(new AsynchListener()  
-{  
-@Override  
-public void asynchCodeDone()  
-{  
-synchronized (lock)  
-{  
-System.out.println("Listener notified");  
-lock.notify();  
-}  
-}  
-});
+	@Test
+	public void testSomeAsynchCode() throws Exception {
+		AsynchObj asynchObj = new AsynchObj();
+		final Object lock = new Object();
+		asynchObj.addListener(new AsynchListener() {
+			@Override
+			public void asynchCodeDone() {
+				synchronized (lock) {
+					System.out.println("Listener notified");
+					lock.notify();
+				}
+			}
+		});
 
-synchronized (lock)  
-{  
-System.out.println("Running asynch code");  
-asynchObj.asynchCode();  
-lock.wait(TIMEOUT);  
-System.out.println("Test notified");  
-}  
-assertEquals(2, asynchObj.getSomeValue());  
-}  
-[/java]
+		synchronized (lock) {
+			System.out.println("Running asynch code");
+			asynchObj.asynchCode();
+			lock.wait(TIMEOUT);
+			System.out.println("Test notified");
+		}
+		assertEquals(2, asynchObj.getSomeValue());
+	}
 
-[java]  
-public interface AsynchListener  
-{  
-void asynchCodeDone();  
-}  
-[/java]
+	public interface AsynchListener {
+		void asynchCodeDone();
+	}
 
-[java]  
-public class AsynchObj  
-{  
-private final int MAX_WAIT = 4000;  
-private int someValue;  
-private Set<AsynchListener> listeners = new HashSet<AsynchListener>();  
-private ExecutorService executor = Executors.newCachedThreadPool();
+	public class AsynchObj {
+		private final int MAX_WAIT = 4000;
+		private int someValue;
+		private Set<AsynchListener> listeners = new HashSet<AsynchListener>();
+		private ExecutorService executor = Executors.newCachedThreadPool();
 
-public void addListener(AsynchListener listener)  
-{  
-listeners.add(listener);  
-}
+		public void addListener(AsynchListener listener) {
+			listeners.add(listener);
+		}
 
-public void asynchCode()  
-{  
-executor.submit(new AsynchObjTask());  
-}
+		public void asynchCode() {
+			executor.submit(new AsynchObjTask());
+		}
 
-class AsynchObjTask implements Runnable  
-{  
-private Random r = new Random();  
-public void run()  
-{  
-randomWait();  
-setSomeValue(2);  
-for (AsynchListener listener : listeners)  
-{  
-listener.asynchCodeDone();  
-}  
-}
+		class AsynchObjTask implements Runnable {
+			private Random r = new Random();
 
-private void randomWait()  
-{  
-int wait = r.nextInt(MAX_WAIT);  
-try  
-{  
-System.out.println(String.format("Waiting for %d ms", wait));  
-Thread.sleep(wait);  
-}  
-catch (InterruptedException e)  
-{  
-}  
-}  
-}
+			public void run() {
+				randomWait();
+				setSomeValue(2);
+				for (AsynchListener listener : listeners) {
+					listener.asynchCodeDone();
+				}
+			}
 
-public void setSomeValue(int x)  
-{  
-this.someValue = x;  
-}
+			private void randomWait() {
+				int wait = r.nextInt(MAX_WAIT);
+				try {
+					System.out.println(String.format("Waiting for %d ms", wait));
+					Thread.sleep(wait);
+				} catch (InterruptedException e) {
+				}
+			}
+		}
 
-public int getSomeValue()  
-{  
-return this.someValue;  
-}  
-}  
-[/java]
+		public void setSomeValue(int x) {
+			this.someValue = x;
+		}
 
-Here's the full [source code](http://craigpardey.com/wp/wp-
-content/uploads/2013/10/asynch.zip).
+		public int getSomeValue() {
+			return this.someValue;
+		}
+	}
+
+Here's the full [source code](http://craigpardey.com/wp/wp-content/uploads/2013/10/asynch.zip).
 
 In this example, AsynchObj will notify the test as soon as it has run the
 asynchronous code. The test case will immediately run the assertion.

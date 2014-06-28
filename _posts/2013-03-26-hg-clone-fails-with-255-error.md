@@ -31,10 +31,8 @@ To get around the problem, I zipped up an existing clone of the repository and
 copied it to the target machine. The developer then tried to switch to the
 branch he needed to be on.
 
-[code]  
-hg update SomeBranchName  
-abort: out of memory  
-[/code]
+	hg update SomeBranchName  
+	abort: out of memory  
 
 Close, but no cigar. But maybe available memory on the workstation is the
 culprit here and not some obscure timeout setting on the web server. There's a
