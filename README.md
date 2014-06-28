@@ -1,5 +1,5 @@
 Craig Pardey's Blog
 ==================
 
-There's nothing to see here.
+Hosted at http://blog.craigpardey.com
 
