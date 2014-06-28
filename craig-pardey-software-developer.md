@@ -1,6 +1,9 @@
 ---
 layout: page
-title: Craig Pardey - Software Developer
+title: Resume
+tagline: Craig Pardey, senior software architect
+header: Resume
+group: navigation
 categories: []
 tags: []
 ---
