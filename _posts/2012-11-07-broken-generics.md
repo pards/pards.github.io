@@ -1,20 +1,10 @@
 ---
 layout: post
 title: Broken Generics
-categories: []
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _syntaxhighlighter_encoded: '1'
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+categories:
+- Code
+tags: 
+- Java
 ---
 
 Given the following code  

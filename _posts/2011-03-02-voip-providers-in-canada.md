@@ -1,22 +1,10 @@
 ---
 layout: post
 title: VOIP providers in Canada
-categories: []
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _aioseop_title: VOIP providers in Canada
-  _aioseop_keywords: voip canada, switching to voip, bell vonage, bell acrovoice,
-    VOIP home security
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+categories: 
+- Telco
+tags: 
+- VOIP
 ---
 
 After a decade of abuse I've decided to ditch my Bell landline in favour of

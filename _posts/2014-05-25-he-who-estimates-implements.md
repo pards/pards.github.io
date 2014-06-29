@@ -2,19 +2,9 @@
 layout: post
 title: He who estimates, implements
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Process
+tags: 
+- Estimating
 ---
 
 > I've been over the high-level requirements and think it'll probably take 8

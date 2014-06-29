@@ -2,27 +2,14 @@
 layout: post
 title: Android or iPhone
 categories:
-- Software Development
+- Mobile
 tags: []
 status: publish
-type: post
-published: true
-meta:
-  _aioseop_title: Android or iPhone
-  _aioseop_keywords: Android development
-  _edit_last: '2'
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
 ---
 
 I wanted to learn how to build mobile apps, so last weekend I bought [Building
 iPhone Apps with HTML, CSS, and JavaScript: Making App Store Apps Without
-Objective-C or Cocoa](http://www.amazon.ca/Building-iPhone-Apps-HTML-
-JavaScript/dp/0596805780/ref=sr_1_1?ie=UTF8&s=books&qid=1280862381&sr=8-1). I
+Objective-C or Cocoa](http://www.amazon.ca/Building-iPhone-Apps-HTML-JavaScript/dp/0596805780/ref=sr_1_1?ie=UTF8&s=books&qid=1280862381&sr=8-1). I
 don't have any problem learning a new language, in fact I really enjoy it, but
 I was reluctant to to pay serious dollars for a Mac just to learn the skill.
 
@@ -42,9 +29,7 @@ Besides, I don't own a Mac so I would have to lay out several thousand dollars
 before I could even start.
 
 In the end I returned the book and swapped it for [Android Wireless
-Application Development](http://www.amazon.ca/Android-Wireless-Application-
-Development-
-Conder/dp/0321743016/ref=sr_1_1?s=books&ie=UTF8&qid=1280863908&sr=1-1) because
+Application Development](http://www.amazon.ca/Android-Wireless-Application-Development-Conder/dp/0321743016/ref=sr_1_1?s=books&ie=UTF8&qid=1280863908&sr=1-1) because
 Android offers a truly open market, and I can build for it using the hardware
 I already own.
 

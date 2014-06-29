@@ -1,19 +1,10 @@
 ---
 layout: post
 title: Tools of the trade
-categories: []
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+categories: 
+- Version Control
+tags: 
+- Mercurial
 ---
 
 Many large companies have explicit policies around which development tools to

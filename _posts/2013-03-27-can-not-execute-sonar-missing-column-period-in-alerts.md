@@ -1,20 +1,10 @@
 ---
 layout: post
 title: ! 'Can not execute Sonar: Missing column: period in ALERTS'
-categories: []
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _syntaxhighlighter_encoded: '1'
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+categories: 
+- Tools
+tags: 
+- Sonar
 ---
 
 I recently encountered the following error in Sonar 3.5  

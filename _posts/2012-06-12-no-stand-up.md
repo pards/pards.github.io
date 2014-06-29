@@ -1,19 +1,10 @@
 ---
 layout: post
 title: No stand-up
-categories: []
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+categories: 
+- Process
+tags: 
+- Agile
 ---
 
 There was no stand-up this morning and it felt like my day never really

@@ -2,28 +2,9 @@
 layout: post
 title: Dysfunctions of a corporation
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _aioseop_title: Dysfunctions of a corporation
-  Title: Dysfunctions of a corporation
-  Description: Silos of expertise make it difficult to co-ordinate the deployment
-    of a complicated application. Getting everyone in the same room would alleviate
-    many of the frustrations and make the process far more efficient.
-  _aioseop_keywords: Continuous deployment, software automation
-  _aioseop_description: Silos of expertise make it difficult to co-ordinate the deployment
-    of a complicated application. Getting everyone in the same room would alleviate
-    many of the frustrations and make the process far more efficient.
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- People
+tags: 
+- Organizational Structure
 ---
 
 Deploying a sufficiently complicated application into a corporate environment

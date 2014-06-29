@@ -2,23 +2,8 @@
 layout: post
 title: Mercurial changes how you work
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _aioseop_title: Mercurial changes how you work
-  _aioseop_description: Mercurial changes how you work. You commit early, and commit
-    often.
-  _aioseop_keywords: Mercurial, dvcs, Mercurial commit
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Version Control
+tags: [Mercurial]
 ---
 
 I've recently started using [Mercurial](http://mercurial.selenic.com/), which

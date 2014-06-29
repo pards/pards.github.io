@@ -2,23 +2,9 @@
 layout: post
 title: How to take local in Mercurial without a merge conflict
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _syntaxhighlighter_encoded: '1'
-  Title: How to take local in Mercurial without a merge conflict
-  _aioseop_title: How to take local in Mercurial without a merge conflict
-  _aioseop_keywords: mercurial, merge, take local, take other
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Version Control
+tags:
+- Mercurial
 ---
 
 When there's a merge conflict in Mercurial, TortoiseHG will give you the

@@ -1,19 +1,10 @@
 ---
 layout: post
 title: ! 'ControlTier: Initial Impressions'
-categories: []
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+categories:
+- Code
+tags: 
+- Continuous Deployment
 ---
 
 For the last 2 months, we've been using [ControlTier](http://controltier.org)

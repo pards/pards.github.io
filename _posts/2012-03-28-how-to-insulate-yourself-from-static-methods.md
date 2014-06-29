@@ -2,25 +2,10 @@
 layout: post
 title: How to insulate yourself from static methods
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _aioseop_description: How to unit test static methods calls in 3rd party libraries
-  _aioseop_keywords: unit test, static unit test
-  Title: Unit testing static methods
-  Description: How to unit test static methods calls in 3rd party libraries
-  Keywords: unit test, junit, static unit test
-  _aioseop_title: Unit test static methods in 3rd party libraries
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- code
+tags: 
+- Java
+- Third Party
 ---
 
 Sometimes your code needs to call a static method in a 3rd party library and

@@ -2,27 +2,9 @@
 layout: post
 title: Keep calm and carry on
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _aioseop_keywords: agile, sprint
-  _aioseop_description: It's during frantic periods when it seems reasonable to break
-    process, but this is when you need it most.
-  Title: Defend your development process
-  Description: It's during frantic periods when it seems reasonable to break process,
-    but this is when you need it most.
-  Keywords: Agile, sprint, process
-  _aioseop_title: Defend your development process
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Process
+tags: 
+- Agile
 ---
 
 "I've had a talk with the Product Owner, and he's decided to let you guys have

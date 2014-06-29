@@ -1,20 +1,10 @@
 ---
 layout: post
 title: How to set JMSXUserID in Websphere MQ using Spring JMS
-categories: []
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _syntaxhighlighter_encoded: '1'
-  _edit_last: '2'
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+categories: 
+- Tools
+tags: 
+- Websphere MQ
 ---
 
 Every time I work with MQ and Spring JMS I want to poke my eyes out with a

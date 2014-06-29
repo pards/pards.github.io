@@ -2,23 +2,10 @@
 layout: post
 title: Using Factory Beans in Spring Java Configs
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _syntaxhighlighter_encoded: '1'
-  _aioseop_keywords: Spring Factory Bean, Spring factory bean Java Configs, spring
-    java config
-  _aioseop_title: Using Factory Beans in Spring Java Configs
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Code
+tags: 
+- Java
+- Spring
 ---
 
 I recently went through an exercise of converting Spring XML configuration

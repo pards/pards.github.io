@@ -2,24 +2,9 @@
 layout: post
 title: Use affirmative phrases for boolean names
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _aioseop_title: Use affirmative phrases for boolean names
-  _aioseop_description: Use affirmative phrases for boolean names
-  _aioseop_keywords: java, boolean, coding standards
-  Title: Use affirmative phrases for boolean names
-  Keywords: java, boolean, coding standards
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Code
+tags: 
+- Variable naming
 ---
 
 Please use affirmative phrases when naming your boolean variables and flags -

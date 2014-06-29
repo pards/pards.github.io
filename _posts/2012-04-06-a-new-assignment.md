@@ -2,20 +2,9 @@
 layout: post
 title: A new assignment
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _wp_old_slug: promotion
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Team
+tags: 
+
 ---
 
 My ex-project and I had been together for ten months. We had our fair share
@@ -38,8 +27,7 @@ _before_ making too many changes.
 I have heard the "R" word being bandied around but I refuse to even consider a
 re-write. If there are significant changes required we can refactor towards
 the new goal. Joel Spolsky puts a re-write at number one in his list of
-[Things you should never
-do](http://www.joelonsoftware.com/articles/fog0000000069.html), and I agree
+[Things you should never do](http://www.joelonsoftware.com/articles/fog0000000069.html), and I agree
 one hundred percent.
 
 It's going to be an interesting couple of months, but hopefully I can get the

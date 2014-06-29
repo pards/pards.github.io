@@ -2,19 +2,9 @@
 layout: post
 title: Things to consider before switching to VOIP
 categories:
+- Telco
+tags: 
 - VOIP
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
 ---
 
 There are many things to consider before switching to VOIP.  My wife and I

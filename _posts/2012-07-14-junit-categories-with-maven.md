@@ -2,29 +2,9 @@
 layout: post
 title: JUnit categories with Maven
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _aioseop_keywords: junit, maven, surefire, excludedgroups
-  Title: JUnit categories with Maven
-  _aioseop_description: ! 'Getting Maven''s SureFire plugin to work with your JUnit
-    categories can be frustrating so here''s a few things that I learnt along the
-    way. '
-  _aioseop_title: JUnit categories with Maven
-  Description: Getting Maven's SureFire plugin to work with your JUnit categories
-    can be frustrating so here's a few things that I learnt along the way.
-  Keywords: junit, maven, surefire, excludedgroups
-  _syntaxhighlighter_encoded: '1'
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Testing
+tags: 
+- JUnit
 ---
 
 	-------------------------------------------------------

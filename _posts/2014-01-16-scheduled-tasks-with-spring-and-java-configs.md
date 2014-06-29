@@ -2,22 +2,10 @@
 layout: post
 title: Scheduled tasks with Spring and Java configs
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _syntaxhighlighter_encoded: '1'
-  _edit_last: '2'
-  _aioseop_description: Spring 3.2 has some very nice features for scheduling tasks.
-  _aioseop_title: Scheduled tasks with Spring and Java configs
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Code
+tags: 
+- Java
+- Spring
 ---
 
 Spring 3.2 has some very nice features for scheduling tasks.

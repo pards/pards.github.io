@@ -1,25 +1,14 @@
 ---
 layout: post
 title: Tapestry and JMeter
-categories: []
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _wp_old_slug: ''
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+categories: 
+- Web Development
+tags: 
+- Tapestry
 ---
 
 I was recently tasked with setting up some load tests for our Tapestry (4.1.6)
-web application. I chose to use [Apache
-JMeter](http://jakarta.apache.org/jmeter/) because it is open-source and is
+web application. I chose to use [Apache JMeter](http://jakarta.apache.org/jmeter/) because it is open-source and is
 flexible enough to do what we needed, and doesn't cost $12,000/month like some
 load testing tools.
 

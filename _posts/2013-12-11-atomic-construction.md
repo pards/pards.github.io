@@ -2,23 +2,10 @@
 layout: post
 title: Atomic construction
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _syntaxhighlighter_encoded: '1'
-  _aioseop_keywords: Atomic construction, java multi-threading, double-checked locking,
-    synchronization
-  _aioseop_title: Atomic construction
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Code
+tags: 
+- Java
+- Concurrency
 ---
 
 Bugs caused by multi-threading can be very difficult to find. Here's one I

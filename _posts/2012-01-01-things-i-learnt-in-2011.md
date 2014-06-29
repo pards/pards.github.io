@@ -2,19 +2,8 @@
 layout: post
 title: Things I Learnt in 2011
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Experience
+tags: 
 ---
 
   1. Automation is good.

@@ -2,19 +2,9 @@
 layout: post
 title: How to be Agile when using 3rd party software framework
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Code
+tags:
+- Third party
 ---
 
 It can be difficult to be Agile when working with 3rd party software

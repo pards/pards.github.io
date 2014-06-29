@@ -2,20 +2,9 @@
 layout: post
 title: hg clone fails with 255 error
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _syntaxhighlighter_encoded: '1'
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Version Control
+tags: 
+- Mercurial
 ---
 
 I recently encountered an issue with cloning a Mercurial repository where it

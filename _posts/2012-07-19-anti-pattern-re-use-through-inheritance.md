@@ -2,28 +2,9 @@
 layout: post
 title: ! 'Anti-pattern: Re-use through inheritance'
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _syntaxhighlighter_encoded: '1'
-  _aioseop_title: ! 'Anti-pattern: Re-use through inheritance '
-  _aioseop_description: ! '"Re-use through inheritance" is an anti-pattern that produces
-    systems that are difficult to test.'
-  _aioseop_keywords: Anti-pattern, Re-use through inheritance , object composition
-  Title: ! 'Anti-pattern: Re-use through inheritance '
-  Description: ! '"Re-use through inheritance" is an anti-pattern that produces systems
-    that are difficult to test.'
-  Keywords: Anti-pattern, Re-use through inheritance , object composition
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Code
+tags: 
+- Anti-pattern
 ---
 
 When I first started programming in object oriented languages I used

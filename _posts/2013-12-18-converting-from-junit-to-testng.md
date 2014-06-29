@@ -2,24 +2,9 @@
 layout: post
 title: Converting from JUnit to TestNG
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _syntaxhighlighter_encoded: '1'
-  _aioseop_title: Converting from JUnit to TestNG
-  _aioseop_keywords: Converting from JUnit to TestNG
-  _aioseop_description: TestNG's Assert uses different argument ordering from JUnit
-    which complicates the conversion process.
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Code
+tags: 
+- Unit Testing
 ---
 
 The TestNG Eclipse plugin has a feature that will convert your unit tests from

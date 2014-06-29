@@ -2,29 +2,10 @@
 layout: post
 title: Maven Release from Jenkins
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _aioseop_description: Automating the Maven Release process will streamline your
-    build cycle, but there are a few gotchas when using Mercurial and Windows
-  _aioseop_keywords: ! 'Maven Release from Jenkins, Mercurial Maven Release, [DEBUG]
-    abort: pom.xml not under root'
-  Title: Maven Release from Jenkins
-  Description: Automating the Maven Release process will streamline your build cycle,
-    but there are a few gotchas when using Mercurial and Windows
-  Keywords: ! 'Maven Release from Jenkins, Mercurial Maven Release, [DEBUG] abort:
-    pom.xml not under root'
-  _aioseop_title: Maven Release from Jenkins
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Tools
+tags: 
+- Maven
+- Jenkins 
 ---
 
 I encountered this error while setting up a Jenkins job to automate our Maven

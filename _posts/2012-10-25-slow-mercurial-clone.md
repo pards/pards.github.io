@@ -2,21 +2,9 @@
 layout: post
 title: Slow Mercurial clone
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  Title: Slow Mercurial clone
-  _syntaxhighlighter_encoded: '1'
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Version Control
+tags: 
+- Mercurial
 ---
 
 I recently set up a Mercurial server (Windows, Apache, ActiveDirectory and

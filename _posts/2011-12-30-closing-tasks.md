@@ -2,23 +2,12 @@
 layout: post
 title: Closing tasks
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Code
+tags: 
+- Handover
 ---
 
-I read a great quote in [I'm feeling lucky](http://www.amazon.com/Im-Feeling-
-Lucky-Confessions-Employee/dp/0547416997). It described a note sent from one
+I read a great quote in [I'm feeling lucky](http://www.amazon.com/Im-Feeling-Lucky-Confessions-Employee/dp/0547416997). It described a note sent from one
 Google employee to another as he handed over a piece of software.
 
   * Here's what I've done.

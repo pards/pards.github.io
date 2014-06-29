@@ -2,24 +2,9 @@
 layout: post
 title: Continuous deployment
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _aioseop_keywords: Continuous deployment, controltier continuous deployment, software
-    automation
-  _aioseop_description: Automation is about scale, not quality
-  Title: Continuous deployment
-  _aioseop_title: Continuous deployment
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- DevOps
+tags: 
+- Continuous Deployment
 ---
 
 Automation isn't about quality, it's about scale.  Manual processes don't

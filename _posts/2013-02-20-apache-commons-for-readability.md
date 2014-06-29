@@ -2,20 +2,10 @@
 layout: post
 title: Apache commons for readability
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _syntaxhighlighter_encoded: '1'
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Code
+tags: 
+- Java
+- Apache Commons
 ---
 
 There are many short methods in the [Apache

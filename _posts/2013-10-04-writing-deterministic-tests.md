@@ -2,26 +2,9 @@
 layout: post
 title: Writing deterministic tests
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _syntaxhighlighter_encoded: '1'
-  _aioseop_description: Non-deterministic unit tests are like kryptonite for an automated
-    build. They cause intermittent build failures and the development team start to
-    ignore the failing build. This is a Bad Thing.
-  _aioseop_keywords: unit test, junit, thread.sleep, deterministic testing, multi-threaded
-    testing, junit multi-threaded
-  _aioseop_title: Writing deterministic tests
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Code
+tags: 
+- Unit Testing
 ---
 
 Non-deterministic unit tests are like kryptonite for an automated build. They

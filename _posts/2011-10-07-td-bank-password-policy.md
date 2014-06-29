@@ -1,21 +1,10 @@
 ---
 layout: post
 title: TD Bank Password Policy
-categories: []
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _aioseop_title: Password Policy
-  _aioseop_keywords: Password Policy
-  _edit_last: '2'
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+categories:
+- Rant
+tags: 
+- Passwords
 ---
 
 > When changing your password, please remember that it must be between 5 and 8

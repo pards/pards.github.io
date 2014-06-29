@@ -2,23 +2,9 @@
 layout: post
 title: Eclipse keyboard shortcuts
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _aioseop_description: Here's my quick list of Eclipse keyboard shortcuts that I
-    think every developer should know.
-  _aioseop_keywords: Eclipse keyboard shortcuts, Eclipse shortcuts
-  _aioseop_title: Eclipse keyboard shortcuts
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- IDE
+tags: 
+- Eclipse
 ---
 
 When I first started working at Intelliware I was amazed at how efficient the

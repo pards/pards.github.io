@@ -2,26 +2,10 @@
 layout: post
 title: How to divide without using division operator
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _aioseop_title: How to divide without using the division operator in Java
-  _aioseop_description: How to divide without using the division operator ("/") in
-    Java
-  Title: How to divide without using the division operator ("/") in Java
-  Description: How to divide without using the division operator ("/") in Java
-  Keywords: divide without /
-  _aioseop_keywords: ! 'java divide without /, java division, kata, '
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Code
+tags: 
+- Java
+- Challenge
 ---
 
 I attended a talk at the Toronto Agile Tour on Deliberate Practice that

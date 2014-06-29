@@ -2,20 +2,8 @@
 layout: post
 title: JRebel and Tapestry working together
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _aioseop_keywords: JRebel, Hot-Swap, JRebel Tapestry
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Web Development
+tags: [Tapestry]
 ---
 
 I've recently started trialling

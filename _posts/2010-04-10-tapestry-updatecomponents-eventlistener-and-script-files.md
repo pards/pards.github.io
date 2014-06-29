@@ -2,23 +2,8 @@
 layout: post
 title: ! 'Tapestry: UpdateComponents, Eventlistener and Script files'
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _aioseop_title: ! 'Tapestry: UpdateComponents, Eventlistener and Script files'
-  _aioseop_description: Loading Tapestry components dynamically using EventListener
-    requires special function declarations in your .script file.
-  _aioseop_keywords: Tapestry, Tapestry EventListener, Tapestry Script UpdateComponents
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Web Development
+tags: [Tapestry]
 ---
 
 This week I encountered an interesting issue in Tapestry when I tried to
@@ -35,12 +20,14 @@ In order for the JavaScript functions to be usable we had to change the script
 file to save anonymous functions into variable names.
 
 Before:  
-`function someFunctionName() {  
-...;  
-}`
+
+	function someFunctionName() {  
+	...;  
+	}
 
 After:  
-`someFunctionName = function() {  
-...;  
-}`
+
+	someFunctionName = function() {  
+	...;  
+	}`
 

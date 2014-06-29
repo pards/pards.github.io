@@ -2,29 +2,11 @@
 layout: post
 title: Synchronized code in distributed systems
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  _aioseop_title: Synchronized code in distributed systems
-  _aioseop_description: Synchronized code in distributed systems requires the use
-    of a synchronization point that is used by all members of the cluster.  The simplest
-    solution is to use the database.
-  _aioseop_keywords: Java synchronization, synchronize cluster
-  Title: Synchronized code in distributed systems
-  Description: Synchronized code in distributed systems requires the use of a synchronization
-    point that is used by all members of the cluster.  The simplest solution is to
-    use the database.
-  Keywords: Java synchronization, synchronize cluster
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Code
+tags: 
+- Java
+- Distributed
+- Concurrency
 ---
 
 I encountered some code recently where a GUI client was listening for Object

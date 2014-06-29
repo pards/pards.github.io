@@ -1,23 +1,10 @@
 ---
 layout: post
 title: Telus fail
-categories: []
-tags: []
+categories: 
+- Rant
+tags: [Telco]
 status: publish
-type: post
-published: true
-meta:
-  _aioseop_keywords: HTC Desire, Android, telus android
-  _edit_last: '2'
-  _wp_old_slug: ''
-  _aioseop_description: HTC Desire reboots on incoming phone calls
-  _aioseop_title: HTC Desire reboots
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
 ---
 
 A few months ago I bought an HTC Desire from Telus. While I loved the phone,

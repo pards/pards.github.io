@@ -2,21 +2,9 @@
 layout: post
 title: Arrays.asList() gives a list with wrong size
 categories:
-- Software Development
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _syntaxhighlighter_encoded: '1'
-  Title: Arrays.asList() gives a list with wrong size
-  _edit_last: '2'
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- Code
+tags: 
+- Java
 ---
 
 Try this out for fun.

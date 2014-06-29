@@ -2,19 +2,9 @@
 layout: post
 title: Interviewing
 categories:
-- Hiring
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-author:
-  login: craig
-  email: craigpardey@gmail.com
-  display_name: craig
-  first_name: Craig
-  last_name: Pardey
+- People
+tags: 
+- Recruiting
 ---
 
 I've been interviewing candidates quite a bit lately and I must admit that I
