@@ -8,7 +8,7 @@ tags:
 ---
 
 > I've been over the high-level requirements and think it'll probably take 8
-weeks with 2 developers, so you should be able to deliver this by X.
+> weeks with 2 developers, so you should be able to deliver this by X.
 
 Well, that's great. Can I presume that you're one of the two developers
 working on it? I didn't think so.
