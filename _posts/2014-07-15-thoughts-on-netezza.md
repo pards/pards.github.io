@@ -3,7 +3,7 @@ layout: post
 title: "Thoughts on Netezza"
 description: ""
 category: rant
-tags: [database]
+tags: [Database]
 ---
 
 I've been using Netezza for a few months now and this post captures my opinions based on my limited experience. For context, I'm populating a Netezza database for a client. The database schema is managed by the client, and Netezza was selected prior to my involvement. Netezza is their data warehouse, but they're also using it a little like an application database.  They're using a [bi-temporal model](http://en.wikipedia.org/wiki/Temporal_database), but that's a subject for another post.
