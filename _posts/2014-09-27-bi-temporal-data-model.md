@@ -131,6 +131,6 @@ A bi-temporal data model increases the code complexity by at least an order of m
 
 In my opinion, you should avoid using a bi-temporal data model if you can.  It sounds great, and sells well, but it will cost the project dearly, and might even cause its demise.  You'd be much better off building a separate data warehouse for your historical data and keeping your "current" data simple.  
 
-I thnk the only person that benefits from a bi-temporal data model is the data architect because he/she becomes indispensible. The developers have to produce greater volumes of ~~buggy~~ complex code, the timelines get pushed out, and the business doesn't get the stable system that they paid through the nose for.
+I thnk the only person that benefits from a bi-temporal data model is the data architect because he/she becomes indispensible. The developers have to produce greater volumes of complex code, the timelines get pushed out, and the business doesn't get the stable system that they paid through the nose for.
 
 Keep it simple, create a data model that people can understand, and your stakeholders will thank you.
