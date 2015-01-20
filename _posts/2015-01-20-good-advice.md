@@ -21,7 +21,7 @@ A thread appeared on Hacker News recently about how successful people operate.  
 > doing the work (e.g. Management). That visibility gives you the means to move in whatever direction you might desire. It also (for 
 > want of a better way to put it) usually tends to help make you layoff-proof because people know you are competent, professional, 
 > and have some flexibility to work as part of a team.
-> 
+
 > None of this means you are anyone other than who you are. Don't kiss anyone's ass, but also don't be an asshole. At the end of the 
 > day with two people even remotely similar in "technical" capability, personal behaviour will matter for increasing your effectiveness within any organization.
 
