@@ -12,7 +12,7 @@ A thread appeared on Hacker News recently about how successful people operate.  
 > * Be mission/vision focused. 
 > * Be polite to everyone always. 
 > * Be helpful whenever possible. 
-> * Be insanely organized. Do not be That Guy/Gal who is always forgetting things, late to meetings, doing the wrong thing, asking stupid questions about stuff that's already been covered in meetings, etc. 
+> * Be insanely organized. 
 > * Seek and respond to constructive feedback on your work. 
 > * Do the shit work without whining. 
 > 
@@ -21,7 +21,7 @@ A thread appeared on Hacker News recently about how successful people operate.  
 > doing the work (e.g. Management). That visibility gives you the means to move in whatever direction you might desire. It also (for 
 > want of a better way to put it) usually tends to help make you layoff-proof because people know you are competent, professional, 
 > and have some flexibility to work as part of a team.
-
+> 
 > None of this means you are anyone other than who you are. Don't kiss anyone's ass, but also don't be an asshole. At the end of the 
 > day with two people even remotely similar in "technical" capability, personal behaviour will matter for increasing your effectiveness within any organization.
 
