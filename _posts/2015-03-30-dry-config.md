@@ -13,13 +13,13 @@ I came across an interesting quirk in an application recently. I needed to chang
     @Value("${app.port}")
     private String appPort;
 
-So I started the Java virtual machine with -Dapp.port=9090 thinking that this would be sufficient, but the application did not behave as expected. I opened up the properties file and found this:
+So I started the Java virtual machine with `-Dapp.port=9090` thinking that this would be sufficient, but the application did not behave as expected. I opened up the properties file and found this:
 
     app.host=localhost
     app.port=8080
     app.url=http://localhost:8080/
 
-On the surface this looks fine until you consider the case above because now we have app.port=9090, but the app.url is still using http://localhost:8080/. In order to change the application port I would actually need to start the JVM with -Dapp.port=9090 -Dapp.url=http://localhost:9090/.
+On the surface this looks fine until you consider the case above because now we have app.port=9090, but the app.url is still using http://localhost:8080/. In order to change the application port I would actually need to start the JVM with `-Dapp.port=9090 -Dapp.url=http://localhost:9090/`.
 
 This is a subtle case of duplication, and one of the tenets of good software development is DRY (Don't Repeat Yourself), so instead of specifying two parameters I took advantage of Spring's property substitution and modified the property file to remove the duplication.
 
@@ -27,5 +27,5 @@ This is a subtle case of duplication, and one of the tenets of good software dev
     app.port=8080
     app.url=http://${app.host}:${app.port}/
 
-Now I can change the port by overriding a single environment variable: -Dapp.port=9090
+Now I can change the port by overriding a single environment variable: `-Dapp.port=9090`
 
