@@ -19,7 +19,7 @@ So I started the Java virtual machine with `-Dapp.port=9090` thinking that this 
     app.port=8080
     app.url=http://localhost:8080/
 
-On the surface this looks fine until you consider the case above because now we have app.port=9090, but the app.url is still using http://localhost:8080/. In order to change the application port I would actually need to start the JVM with `-Dapp.port=9090 -Dapp.url=http://localhost:9090/`.
+On the surface this looks fine until you consider the case above because now we have app.port=9090, but the app.url is still using http://localhost:8080/. In order to change the application port I would actually need to start the JVM with -Dapp.port=9090 -Dapp.url=http://localhost:9090/.
 
 This is a subtle case of duplication, and one of the tenets of good software development is DRY (Don’t Repeat Yourself), so instead of specifying two parameters I took advantage of Spring’s property substitution and modified the property file to remove the duplication.
 
