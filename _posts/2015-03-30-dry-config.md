@@ -6,7 +6,7 @@ category: spring
 tags: []
 ---
 
-Externalizing application configuration values into a properties file is a common pattern in enterprise applications, because it gets the environment-specific settings out of the code and avoids the need for environment-specific builds. Being able to deploy the same binary to multiple environments (Dev -> QA -> UAT -> Production) is a Good Thing.
+Externalizing application configuration values into a properties file is a common pattern in enterprise applications, because it gets the environment-specific settings out of the code and avoids the need for environment-specific builds. Being able to deploy the same binary to multiple environments (Dev, QA, UAT, Production) is a Good Thing.
 
 I came across an interesting quirk in an application recently. I needed to change the port of the application server for one of the app’s components, and the port value was wired up via Spring using some code that looked like this:
 
