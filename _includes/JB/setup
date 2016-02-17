@@ -1,4 +1,5 @@
 {% capture jbcache %}
+{% capture ASSET_PATH %}{{ BASE_PATH }}/assets/themes/{{ site.JB.THEME }}{% endcapture %}
   <!--
   - Dynamically set liquid variables for working with URLs/paths
   -->
