@@ -12,10 +12,10 @@ But they rarely discuss culture.
 
 "Culture" in this context is used to broadly describe how people behave in the company. 
 
-# Are they process-driven automatons, or pro-active problem solvers?  
-# Does the company reward creative thinking and accountability, or does it reprimand employees that try to improve efficiency by changing processes?  
-# Who is responsible for quality: developers, QA, nobody, or everyone?
-# How many forms does it take to release code to production?
+1. Are they process-driven automatons, or pro-active problem solvers?  
+1. Does the company reward creative thinking and accountability, or does it reprimand employees that try to improve efficiency by changing processes?  
+1. Who is responsible for quality: developers, QA, nobody, or everyone?
+1. How many forms does it take to release code to production?
 
 Culture can't be changed by buying a Jira license or installing Jenkins but that's where many Agile Transformations start. Executive mandate won't help either - you'll get compliance but not commitment.  The people on the ground have to want to change the way they work otherwise you'll end up in a War of Attrition because the lifers in the company can outlast the newest CIO. 
 
