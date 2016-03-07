@@ -22,11 +22,11 @@ Harvard Business School's professor Amy Edmondson described this as "a sense of 
 > ... the good teams all had high "average social sensitivity" - a fancy way of saying they were skilled at intuiting how others felt based on their tone of voice, their 
 > expressions and other nonverbal cues.
 
-Ok, great, but how can you use this to fix a broken team?  The Google article describes how one manager, Matt Sakaguchi, approached the issue. He held an offsite gathering and opened up his personal issues to the team - by telling them that he has Stage 4 cancer.  By making himself vulnerable and dismantling the work/life division he was able to reach the members of his team and get them to see each other as people, rather than just workers.
+Ok, great, but how can you use this to fix a broken team?  The Google article describes how one manager, Matt Sakaguchi, approached the issue. He held an offsite meeting and opened up his personal issues to the team - by telling them that he has Stage 4 cancer.  By making himself vulnerable and dismantling the work/life division he was able to reach the members of his team and get them to see each other as people, rather than just workers.
 
 Trust, respect and empathy are the foundational attributes of a strong team, where people are comfortable being themselves.
 
-There's also a series of questions known as the Westrum items ([1][1], [2][2]) which can be used to measure the culture of a team (or organisation) by simply answering a few questions on a scale of 1-7.
+There's also a series of questions known as the Westrum items ([1][2], [2][3]) which can be used to measure the culture of a team (or organisation) by simply answering a few questions on a scale of 1-7.
 
 The Westrum items are: 
 
