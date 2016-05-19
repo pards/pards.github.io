@@ -28,17 +28,27 @@ making a team stronger than the sum of its parts.
 
 ### TECHNOLOGY SUMMARY
 
-Java, Spring, Hibernate, Weblogic, J2EE, Sybase, JavaScript, Struts, XML, XSD,
-XSLT, Eclipse, Transact-SQL, Ant, Maven, SubVersion, CVS, JBoss, Tomcat,
-MySQL, Oracle, Coherence Experience, Mercurial DVCS, Tapestry, jQuery,
-Armanta, Nirvana, Jenkins, Hudson, Selenium
+Java, JUnit, Spring, Hibernate, J2EE, JavaScript, Eclipse, Transact-SQL, Shell scripting, Python, 
+Oracle, Postgres, Sybase, MySQL, Ant, Maven, Git, Mercurial, SubVersion, CVS, 
+Tomcat, JBoss, WebSphere, jQuery, Nirvana, Jenkins, Selenium Webdriver
+
+### TD SECURITIES, PRECIOUS METALS (Toronto, Canada)
+
+##### March 2016 - present
+
+Senior technical consultant helping TD Securities' retail precious metals business 
+grow their business by offering precious metals directly to customers for home 
+delivery.
 
 ### INTELLIWARE INC. (Toronto, Canada)
 
-##### October 2013 - present
+##### October 2013 - March 2016
 
-Solution Architect for a high-volume risk system for a major Canadian bank. Responsible for
-the solution design, code development and curation, and team organisation.
+Solution Architect for Canadian banking clients, working on projects in
+
+- Risk management with "big data"
+- Retail mortgages
+- DevOps and deployment automation
 
 ### CIBC WORLD MARKETS (Toronto, Canada)
 
