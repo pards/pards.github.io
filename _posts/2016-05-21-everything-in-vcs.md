@@ -23,5 +23,5 @@ If this sounds like your environment then take a long, hard look at your release
 
 Do this with diligence and you'll have a reliable, reproducible system that can push fixes on short notice without relying on [Brent(s)][1].
 
-[1] https://www.amazon.ca/Phoenix-Project-DevOps-Helping-Business-ebook/dp/B00AZRBLHO "Don't be Brent"
+[1]: https://www.amazon.ca/Phoenix-Project-DevOps-Helping-Business-ebook/dp/B00AZRBLHO "Don't be Brent"
 
