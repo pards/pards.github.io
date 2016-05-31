@@ -5,7 +5,6 @@ description: ""
 category: agile
 tags: [agile, devops, continuous delivery]
 ---
-
 > Me: Why is this report different to the one in production?
 > SysAdmin: Dunno. I guess they must have fixed it production and forgot to check it back into source control.
 
