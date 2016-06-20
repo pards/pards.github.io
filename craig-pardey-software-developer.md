@@ -184,9 +184,9 @@ Higher School Certificate (87.55%), St Patrick's College, Sydney
 
 Running
 
-* [Marathon][sportstats] 3:54:11 05-May-2013 
-* [Half-Marathon][rocknroll] 1:44:11 04-Dec-2011 
-* [10K][sportstats] 46:11 04-May-2008
+* [Marathon][sportstats] 3:54:11  
+* [Half-Marathon][rocknroll] 1:44:11
+* [10K][sportstats] 46:11
 
 [sportstats]: https://www.sportstats.ca/search-results.xhtml?query=craig+pardey
 [rocknroll]: http://running.competitor.com/rnrresults?eId=27&eiId=61&seId=&pId=54532
