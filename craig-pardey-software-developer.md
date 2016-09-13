@@ -180,3 +180,13 @@ Certificate in C Programming (Level IV)
 Object Oriented Programming in Java - University of Sydney  
 Higher School Certificate (87.55%), St Patrick's College, Sydney
 
+### INTERESTS
+
+Running
+
+* [Marathon][sportstats] 3:54:11  
+* [Half-Marathon][rocknroll] 1:44:11
+* [10K][sportstats] 46:11
+
+[sportstats]: https://www.sportstats.ca/search-results.xhtml?query=craig+pardey
+[rocknroll]: http://running.competitor.com/rnrresults?eId=27&eiId=61&seId=&pId=54532
