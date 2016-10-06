@@ -6,7 +6,7 @@ category: diet
 tags: [tea, coffee, caffeine]
 ---
 
-This is a continuation of my post about [clean tea](2016-09-21-clean-tea.md), except this time I analysed the offerings from [Teavana®](http://www.teavana.com) (a Starbucks company).
+This is a continuation of my post about [clean tea](2016/09/clean-tea), except this time I analysed the offerings from [Teavana®](http://www.teavana.com) (a Starbucks company).
 
 Teavana® by the numbers:
 
