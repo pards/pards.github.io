@@ -8,17 +8,16 @@ tags: [programming, development]
 
 [Michael Feathers](https://www.amazon.ca/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052) says that legacy code is any code without tests but I'd go a step further and say that legacy code is any code that is still running even though the original developer(s) are no longer working on it.  And there is certainly plenty of _that_ in financial institutions.  There are other characteristics too, such as:
 
-    - unreproducible production environment
-    - incomplete source control
-
-        -- missing files
-        -- 'master' fails to build
-    - no automated build process
-    - no release process
-    - few or no unit tests
-    - no way to run or test the code on a developer workstation
-    - little or no documentation
-    - none of the original developers available
+- unreproducible production environment
+- incomplete source control
+    - missing files
+    - 'master' fails to build
+- no automated build process
+- no release process
+- few or no unit tests
+- no way to run or test the code on a developer workstation
+- little or no documentation
+- none of the original developers available
 
 I am presently working on a codebase that checks _all of the above_ boxes and it isn't even that old but instead of dismissing it as an unmaintainable mess I have changed my mindset and have started referring to it as Heirloom Code.  
 
