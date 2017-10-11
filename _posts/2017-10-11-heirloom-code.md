@@ -10,10 +10,8 @@ tags: [programming, development]
 
 - unreproducible production environment
 - incomplete source control
-
--- missing files
--- 'master' fails to build
-
+    -- missing files
+    -- 'master' fails to build
 - no automated build process
 - no release process
 - few or no unit tests
