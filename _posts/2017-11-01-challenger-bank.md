@@ -28,4 +28,4 @@ The benefits of a real-time system are evident when you top it up. Email transfe
 
 You can get a $10 sign-up bonus using the referral code:
 
-- [BIK4VN3L](https://app.koho.ca/refferal/BIK4VN3L) (valid until Nov 26, 2017)
+- [BIK4VN3L](https://app.koho.ca/referral/BIK4VN3L) (valid until Nov 26, 2017)
